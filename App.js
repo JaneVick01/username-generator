@@ -6,9 +6,9 @@ function App() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const response = await fetch(`https://YOUR_API_GATEWAY_URL?dateOfBirth=${dob}`, {
+        const response = await fetch(`https://6gzrai2ni5.execute-api.eu-north-1.amazonaws.com/dev?dateOfBirth=${dob}`, {
             headers: {
-                'x-api-key': 'YOUR_API_KEY'
+                'x-api-key': 'BhPxtIi7QVadVaBwZr5rN8bjEY4Xr0c84diqw3Y5'
             }
         });
         const data = await response.json();
